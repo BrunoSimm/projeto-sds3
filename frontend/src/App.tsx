@@ -1,9 +1,19 @@
-
+import DataTable from "components/DataTable";
+import Footer from "components/Footer";
+import NavBar from "components/NavBar";
+//Componente que será o principal para renderizar no index.tsx
 function App() {
   return (
-    <div>
-      <h1 className="text-primary" >Olá mundo!!</h1> 
-    </div>
+    <>
+      <NavBar />
+
+      <div className='container'>
+        {/*"className" = JSX. Html = "class"*/}
+        <DataTable/>
+      </div>
+
+      <Footer/>
+    </>
   );
 }
 
